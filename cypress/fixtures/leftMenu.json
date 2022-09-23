@@ -1,0 +1,14 @@
+{
+  "elements": "Elements",
+  "forms": "Forms",
+  "alertsFramesWindows": "Alerts, Frame & Windows",
+  "widgets": "Widgets",
+  "interactions": "Interactions",
+  "bookStoreApp": "Book Store Application",
+  "bookStore": {
+    "login": "Login",
+    "bookStore": "Book Store",
+    "profile": "Profile",
+    "bookStoreAPI": "Book Store API"
+  }
+}

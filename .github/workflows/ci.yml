@@ -13,16 +13,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
-      # because of "record" and "parallel" parameters
-      # these containers will load balance all found tests among themselves
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
           record: true
           parallel: true
           spec: cypress/e2e/integration/simple.spec.ts
-          command: |
+          script: 
                npm run cy:run
                npm run cy:run:chrome
                npm run cy:run:edge
+

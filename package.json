@@ -6,8 +6,9 @@
   "scripts": {
     "test": "cypress run",
     "cypress:open": "cypress open",
-    "cy:run:chrome": "cypress run open --config-file=cypress.config.ts --spec cypress/e2e/integration/simple.spec.ts --browser chrome",
-    "cy:run:edge": "cypress run open --config-file=cypress.config.ts --spec cypress/e2e/integration/simple.spec.ts --browser edge"
+    "cy:run:chrome": "cypress run --record --group --config-file=cypress.config.ts  --config viewportWidth=768,viewportHeight=1024 --browser chrome",
+    "cy:run:edge": "cypress run --record --group --config-file=cypress.config.ts --config viewportWidth=1024,viewportHeight=768 --browser edge",
+    "cy:run" : "cypress run --record --group --config-file=cypress.config.ts"
   },
   "author": "",
   "license": "ISC",

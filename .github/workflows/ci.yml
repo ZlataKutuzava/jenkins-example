@@ -21,8 +21,7 @@ jobs:
         with:
           record: true
           parallel: true
-          run: cy:run
-          browser: |
-              chrome
-              edge
-              electron
+          run: |
+               cy:run
+               cy:run:chrome
+               cy:run:edge

@@ -6,10 +6,12 @@ jobs:
   test:
     name: Cypress run
     runs-on: ubuntu-20.04
+
     strategy:
       matrix:
         # run 3 copies of the current job in parallel
         containers: [1, 2, 3]
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -19,8 +21,10 @@ jobs:
           record: true
           parallel: true
           spec: cypress/e2e/integration/simple.spec.ts
-          script: 
-               npm run cy:run
-               npm run cy:run:chrome
-               npm run cy:run:edge
 
+        run: 
+              npm run cy:run
+              npm run cy:run:chrome
+              npm run cy:run:edge
+ 
+        

@@ -19,8 +19,9 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
+          record: true
           parallel: true
-          run: |
-               cy:run
-               cy:run:chrome
-               cy:run:edge
+          command: |
+               npm run cy:run
+               npm run cy:run:chrome
+               npm run cy:run:edge

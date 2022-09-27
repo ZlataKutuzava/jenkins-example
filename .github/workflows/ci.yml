@@ -17,13 +17,15 @@ jobs:
         uses: actions/checkout@v2
       - name: Cypress run
         uses: cypress-io/github-action@v4
-        with:
-          record: true
-          parallel: true
-          spec: cypress/e2e/integration/simple.spec.ts
+
+      - name: Run script
         run: | 
               npm run cy:run \
               --npm run cy:run:chrome \
               --npm run cy:run:edge \
+        with:
+          record: true
+          parallel: true
+          spec: cypress/e2e/integration/simple.spec.ts
        
         

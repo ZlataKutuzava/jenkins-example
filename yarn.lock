@@ -532,6 +532,11 @@
   "resolved" "https://registry.npmjs.org/cypress-file-upload/-/cypress-file-upload-5.0.8.tgz"
   "version" "5.0.8"
 
+"cypress-fill-command@^1.0.2":
+  "integrity" "sha512-lUkeP1vPfvRP0SnbfZBIv3oje4L0qenM/uwYrViXVtuqDADa6MI3ptvNrDWyDnPYcX3p2SyNGRhnRifoOhxlRg=="
+  "resolved" "https://registry.npmjs.org/cypress-fill-command/-/cypress-fill-command-1.0.2.tgz"
+  "version" "1.0.2"
+
 "cypress-mochawesome-reporter@^3.2.0":
   "integrity" "sha512-2cTKgjQmmCdNvMTca1ieCcfF8fFih7Ums/iJxqXpN9RCIE/4wIGzwjmEDDNgRm+SyGOUac6EdfAVe48S82Bw0Q=="
   "resolved" "https://registry.npmjs.org/cypress-mochawesome-reporter/-/cypress-mochawesome-reporter-3.2.0.tgz"

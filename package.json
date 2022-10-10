@@ -6,9 +6,9 @@
   "scripts": {
     "test": "cypress run",
     "cypress:open": "cypress open",
-    "cy:run:chrome": "cypress run --record --group --config-file=cypress.config.ts  --config viewportWidth=768,viewportHeight=1024 --browser chrome",
-    "cy:run:edge": "cypress run --record --group --config-file=cypress.config.ts --config viewportWidth=1024,viewportHeight=768 --browser edge",
-    "cy:run" : "cypress run --record --group --config-file=cypress.config.ts"
+    "cy:run:chrome": "cypress run --config viewportWidth=768,viewportHeight=1024 --browser chrome",
+    "cy:run:edge": "cypress run --config viewportWidth=1024,viewportHeight=768 --browser edge",
+    "cy:run": "cypress run"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "cy-view": "^1.0.11",
     "cypress": "^10.3.1",
     "cypress-file-upload": "^5.0.8",
+    "cypress-fill-command": "^1.0.2",
     "cypress-multi-reporters": "^1.6.1",
     "cypress-network-idle": "^1.10.0",
     "cypress-xpath": "^2.0.1",

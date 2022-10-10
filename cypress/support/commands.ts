@@ -1,6 +1,7 @@
 import '@testing-library/cypress/add-commands';
 import 'cypress-wait-until';
 import 'cypress-file-upload';
+import 'cypress-fill-command'
 
 Cypress.Commands.add("getByClass", (value: string): void => {
   cy.get(`.${value}`);
@@ -73,3 +74,6 @@ Cypress.Commands.add('screenshotViewportInBrowser', (screenshotName: string): vo
 cy.log(`Screenshot with the name ${screenshotName} was taken in browser ${Cypress.browser.displayName}`);
 });
 
+Cypress.on('window:before:load', window => {
+  Object.defineProperty(window.navigator, 'language', { value: 'en-CA' }); 
+});
